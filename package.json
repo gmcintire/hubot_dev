@@ -20,7 +20,8 @@
     "hubot-shipit": "^0.1.1",
     "hubot-youtube": "^0.1.2",
     "request": "~2.51.0",
-    "ntwitter": "~0.5.0"
+    "ntwitter": "~0.5.0",
+    "underscore": "~1.7.0"
   },
   "engines": {
     "node": "0.10.x"
