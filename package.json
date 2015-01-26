@@ -24,7 +24,8 @@
     "underscore": "~1.7.0",
     "hubot-thesimpsons": ">= 0.0.0",
     "hubot-fliptable": "~1.2.0",
-    "hubot-motivate": "~3.0.0"
+    "hubot-motivate": "~3.0.0",
+    "hubot-victory": "~1.2.0"
   },
   "engines": {
     "node": "0.10.x"
