@@ -27,7 +27,9 @@
     "hubot-motivate": "~3.0.0",
     "hubot-victory": "~1.2.0",
     "hubot-seen": "~0.2.2",
-    "hubot-business-cat": "~1.1.10"
+    "hubot-business-cat": "~1.1.10",
+    "hubot-plusplus": "~1.1.2",
+    "hubot-sentimental": "~1.0.3"
   },
   "engines": {
     "node": "0.10.x"
