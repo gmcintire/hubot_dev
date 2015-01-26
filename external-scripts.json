@@ -19,5 +19,7 @@
   "hubot-plusplus",
   "hubot-sentimental",
   "hubot-outofcontext",
-  "hubot-seriouslyguys"
+  "hubot-seriouslyguys",
+  "hubot-reaction",
+  "hubot-plusplus"
 ]
