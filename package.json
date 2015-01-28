@@ -43,7 +43,8 @@
     "hubot-insanedomains": "0.0.2",
     "hubot-meowme": "0.0.1",
     "hubot-bukkit": "~0.3.0",
-    "hubot-privilege": "0.0.5"
+    "hubot-privilege": "0.0.5",
+    "hubot-spotify-search": "~1.0.0"
   },
   "engines": {
     "node": "0.10.x"
