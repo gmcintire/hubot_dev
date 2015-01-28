@@ -49,8 +49,10 @@ module.exports = (robot) ->
       removeQuote(robot.brain.data.oocQuotes, user, msg.match[2])
       msg.send "Quote has been removed from historical records."
 
-  robot.hear /(hey (.*?)).*/i, (msg) ->
-    msg.send "0: #{msg.match[0]} 1: #{msg.match[1]} 2: #{msg.match[2]}"
+  robot.hear /hey (\S+[^+:\s])(\s|$)/, (msg) ->
+    subject = msg.match[1].toLowerCase()
+    msg.send subject
+    return
     return unless robot.brain.data.oocQuotes?
     name = msg.match[1].toLowerCase()
     if (quotes = robot.brain.data.oocQuotes[name])
