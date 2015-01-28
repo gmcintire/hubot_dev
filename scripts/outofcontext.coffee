@@ -42,7 +42,7 @@ module.exports = (robot) ->
   robot.respond /outofcontext|ooc (?!rm )(.*?): (.*)/i, (msg) ->
     findUser robot, msg, msg.match[1], (user) ->
       appendQuote(robot.brain.data.oocQuotes, user, msg.match[2])
-      msg.send "Quote has been stored for future prosperity."
+      msg.send "Quote has been stored."
 
   robot.respond /outofcontext|ooc rm (.*?): (.*)/i, (msg) ->
     findUser robot, msg, msg.match[1], (user) ->
@@ -50,6 +50,7 @@ module.exports = (robot) ->
       msg.send "Quote has been removed from historical records."
 
   robot.hear /.*(hey (.*)).*/i, (msg) ->
+    msg.send "0: #{msg.match[0]} 1: #{msg.match[1]} 2: #{msg.match[1]}"
     return unless robot.brain.data.oocQuotes?
     name = msg.match[1].toLowerCase()
     if (quotes = robot.brain.data.oocQuotes[name])
