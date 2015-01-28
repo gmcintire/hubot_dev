@@ -54,7 +54,7 @@ module.exports = (robot) ->
     name = msg.match[1].toLowerCase()
     if (quotes = robot.brain.data.oocQuotes[name])
       randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
-      msg.send "\"#{randomQuote}\" - #{msg.message.user.name}"
+      msg.send "\"#{randomQuote}\" - #{name}"
 
   robot.hear /./i, (msg) ->
     return unless robot.brain.data.oocQuotes?
