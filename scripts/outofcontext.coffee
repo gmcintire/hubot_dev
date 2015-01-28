@@ -49,6 +49,12 @@ module.exports = (robot) ->
       removeQuote(robot.brain.data.oocQuotes, user, msg.match[2])
       msg.send "Quote has been removed."
 
+  robot.respond /outofcontext|ooc count (.*?)/i, (msg) ->
+    name = msg.match[1].toLowerCase()
+    if (quotes = robot.brain.data.oocQuotes[name])
+      quotes.length
+      msg.send "#{name}: #{quotes} quotes"
+
   robot.hear /hey ?(.+)$/i, (msg) ->
     return unless robot.brain.data.oocQuotes?
     name = msg.match[1].toLowerCase()
