@@ -40,7 +40,8 @@
     "hubot-dinner": "0.0.3",
     "hubot-url-title": "~1.2.0",
     "hubot-at": "0.0.4",
-    "hubot-imgur_puns": "~1.0.0"
+    "hubot-imgur_puns": "~1.0.0",
+    "hubot-insanedomains": "0.0.2"
   },
   "engines": {
     "node": "0.10.x"
