@@ -52,8 +52,7 @@ module.exports = (robot) ->
   robot.respond /outofcontext|ooc count ?(.+)$/i, (msg) ->
     name = msg.match[1].toLowerCase()
     quotes = robot.brain.data.oocQuotes[name]
-    quotes.length
-    msg.send "#{name}: #{quotes} quotes"
+    msg.send "#{name}: #{quotes.length} quotes"
 
   robot.hear /hey ?(.+)$/i, (msg) ->
     return unless robot.brain.data.oocQuotes?
