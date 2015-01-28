@@ -56,10 +56,10 @@ module.exports = (robot) ->
       randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
       msg.send "\"#{randomQuote}\" - #{name}"
 
-  robot.hear /./i, (msg) ->
-    return unless robot.brain.data.oocQuotes?
-    if (quotes = robot.brain.data.oocQuotes[msg.message.user.name])
-      randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
-
-      if Math.floor(Math.random() * 200) == 42
-        msg.send "\"#{randomQuote}\" - #{msg.message.user.name}"
+  # robot.hear /./i, (msg) ->
+  #   return unless robot.brain.data.oocQuotes?
+  #   if (quotes = robot.brain.data.oocQuotes[msg.message.user.name])
+  #     randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+  #
+  #     if Math.floor(Math.random() * 200) == 42
+  #       msg.send "\"#{randomQuote}\" - #{msg.message.user.name}"
