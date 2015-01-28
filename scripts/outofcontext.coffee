@@ -47,7 +47,7 @@ module.exports = (robot) ->
   robot.respond /outofcontext|ooc rm (.*?): (.*)/i, (msg) ->
     findUser robot, msg, msg.match[1], (user) ->
       removeQuote(robot.brain.data.oocQuotes, user, msg.match[2])
-      msg.send "Quote has been removed from historical records."
+      msg.send "Quote has been removed."
 
   robot.hear /hey ?(.+)$/i, (msg) ->
     return unless robot.brain.data.oocQuotes?
