@@ -42,7 +42,8 @@
     "hubot-at": "0.0.4",
     "hubot-insanedomains": "0.0.2",
     "hubot-meowme": "0.0.1",
-    "hubot-bukkit": "~0.3.0"
+    "hubot-bukkit": "~0.3.0",
+    "hubot-privilege": "0.0.5"
   },
   "engines": {
     "node": "0.10.x"
