@@ -17,6 +17,6 @@ module.exports = (robot) ->
     target = msg.match[1]
     msg.send "#{msg.message.user.name}: Your mom is #{target}#{msg.match[2]}"
 
-  robot.hear /(?=that|she|he|they|we|this) (?=is|are|was|were) ([\w\s]*)\b?/i, (msg) ->
+  robot.hear /(?:that|she|he|they|we|this) (?:is|are|was|were) ([\w\s]*)/i, (msg) ->
     adjective = msg.match[1]
     msg.send "#{msg.message.user.name}: Your mom is #{adjective}"
