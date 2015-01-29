@@ -10,7 +10,7 @@
 # Commands:
 #
 # Author:
-#   robotmay
+#   gmcintire
 
 module.exports = (robot) ->
   robot.hear /.*?\b([a-z\-A-Z]+[iI][nN][gG])\b([\w\s]*)/
