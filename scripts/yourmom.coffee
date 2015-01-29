@@ -13,7 +13,7 @@
 #   gmcintire
 
 module.exports = (robot) ->
-  robot.hear /.*?\b([a-z\-A-Z]+[iI][nN][gG])\b([\w\s]*)/
+  robot.hear /.*?\b([a-z\-A-Z]+[iI][nN][gG])\b([\w\s]*)/i, (msg) ->
     target = msg.match[1]
     msg.send "#{msg.message.user.name}: Your mom is #{target}#{msg.match[2]}"
 
