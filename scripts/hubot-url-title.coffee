@@ -40,7 +40,7 @@ module.exports = (robot) ->
     ignorePattern = process.env.HUBOT_URL_TITLE_IGNORE_URLS
     if !ignore && ignorePattern
       ignore = url.match(ignorePattern)
-
+    
     unless ignore
       request(
         url
