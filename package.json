@@ -1,6 +1,6 @@
 {
   "name": "Ricky",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "author": "Graham McIntire <gmcintire@gmail.com>",
   "description": "Trailer park trash",
@@ -18,10 +18,8 @@
     "hubot-google-translate": "^0.1.0",
     "hubot-help": "^0.1.1",
     "hubot-heroku-keepalive": "0.0.4",
-    "hubot-insanedomains": "0.0.2",
     "hubot-irc": "^0.2.7",
     "hubot-maps": "0.0.1",
-    "hubot-markov": "^1.3.0",
     "hubot-marvin": "0.0.2",
     "hubot-meowme": "0.0.1",
     "hubot-motivate": "~3.0.0",
