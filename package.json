@@ -11,13 +11,13 @@
     "hubot-at": "0.0.4",
     "hubot-bofh": "~1.0.0",
     "hubot-bukkit": "~0.3.0",
-    "hubot-business-cat": "~1.1.10",
+    "hubot-business-cat": "^1.1.16",
     "hubot-diagnostics": "0.0.1",
     "hubot-dinner": "0.0.3",
     "hubot-google-images": "^0.1.2",
     "hubot-google-translate": "^0.1.0",
     "hubot-heroku-keepalive": "0.0.4",
-    "hubot-irc": "^0.2.7",
+    "hubot-irc": "~0.2.7",
     "hubot-maps": "0.0.1",
     "hubot-motivate": "~3.0.0",
     "hubot-plusplus": "~1.1.2",
@@ -40,7 +40,7 @@
     "jsdom": "~3.1.1",
     "ntwitter": "~0.5.0",
     "request": "^2.51.0",
-    "underscore": "~1.7.0"
+    "underscore": "^1.7.0"
   },
   "engines": {
     "node": "0.10.x"
